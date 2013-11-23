@@ -5,48 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-45937616-1', 'stefaneng.github.io');
-  ga('send', 'pageview');
-</script>
+	<link rel="stylesheet" href="/css/syntax.css">
+	<link rel="stylesheet" href="/css/main.css">
+	{% include mathjax.html %}
+	{% include analytics.html %}
     </head>
     <body>
-
         <div class="site">
           <div class="header">
             <h1 class="title"><a href="/">{{ site.name }}</a></h1>
             <a class="extra" href="/">home</a>
 	    <a class="extra" href="/school">school</a>
           </div>
-
           {{ content }}
-
-<!--
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Stefan Eng<br />
-                stefaneng13@gmail.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/stefaneng">github.com/stefaneng</a><br />
-              </p>
-            </div>
-          </div> -->
         </div>
-
     </body>
 </html>
