@@ -276,9 +276,3 @@ for (x, y) in extract_hyponym("Please bring tools, such as a screwdriver, hammer
 ### References
   1. [Automatic Acquisition of Hyponyms from Large Text Corpora (Hearst 1992)](http://people.ischool.berkeley.edu/~hearst/papers/coling92.pdf)
   2. [Hyponymy and hypernymy Wikipedia](https://en.wikipedia.org/wiki/Hyponymy_and_hypernymy)
-
-
-
-### References
-  1. [Automatic Acquisition of Hyponyms from Large Text Corpora (Hearst 1992)](http://people.ischool.berkeley.edu/~hearst/papers/coling92.pdf)
-  2. [Hyponymy and hypernymy Wikipedia](https://en.wikipedia.org/wiki/Hyponymy_and_hypernymy)
