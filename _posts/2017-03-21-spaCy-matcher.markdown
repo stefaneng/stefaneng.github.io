@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Detecting Hyponyms with spaCy matchers"
-date:   2017-03-21 80:00:00 -0800
+date:   2017-03-21 8:00:00 -0800
 categories: spaCy nlp python
 ---
 
