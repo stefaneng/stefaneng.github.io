@@ -29,7 +29,7 @@ sapply(res, class)
 
 By default, the nested objects are stored as nested data frames.
 The function `jsonlite::flatten` will flatten the resulting data frame.
-Note that jsonlite import purrr which has its own version of flatten.
+Note that jsonlite imports purrr which has its own version of flatten.
 
 {% highlight R %}
 # Flatten the nested data frames
