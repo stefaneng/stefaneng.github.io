@@ -7,7 +7,7 @@ categories: R jsonlite
 
 We have a file with one valid JSON objects per line which we will load using [jsonlite](https://cran.r-project.org/web/packages/jsonlite/index.html)
 
-{% highlight json %}
+{% highlight R %}
 library(jsonlite)
 
 jsonString <- '{"score": 10, "info": { "name": "Stefan", "website": "stefanengineering.com"}}\n{"score": 12, "info": { "name": "Lars"}}'
@@ -30,7 +30,7 @@ By default, the nested objects are stored as nested data frames.
 The function `jsonlite::flatten` will flatten the resulting data frame.
 Note that jsonlite import purrr which has its own version of flatten.
 
-{% highlight json %}
+{% highlight R %}
 # Flatten the nested data frames
 # Use the jsonlite flatten rather than purrr flatten
 (flatRes <- jsonlite::flatten(res))
