@@ -17,7 +17,6 @@ We want to apply a function (Pasting `*`) for each cell that is below a specific
 
 ### Helper Function
 First we define a function that allows us to apply a function to each cell that satisfies a property.
-There may already be a function for this, but I could not find it.
 ```{r}
 #' Applies a function `f` to each cell of a data frame `mat` if the corresponding cell in `p` is TRUE
 #'
@@ -29,13 +28,9 @@ There may already be a function for this, but I could not find it.
 #' x <- rbind(c(1,2,3), c(4,5,6), c(7,8,9))
 #' apply_if(x, upper.tri(x), function(x) x + 5)
 apply_if <- function(mat, p, f) {
-  for(i in 1:length(mat[,1])) {
-    for(j in 1:length(mat[i,])) {
-      if(is.na(p[i,j]) || p[i,j])  { 
-        mat[i,j] = f(mat[i,j])
-      }
-    }
-  }
+  # Fill NA with FALSE
+  p[is.na(p)] <- FALSE
+  mat[p] <- f(mat[p])
   mat
 }
 ```

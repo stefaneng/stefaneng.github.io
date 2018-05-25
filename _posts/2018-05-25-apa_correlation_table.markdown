@@ -31,13 +31,9 @@ There may already be a function for this, but I could not find it.
 #' x <- rbind(c(1,2,3), c(4,5,6), c(7,8,9))
 #' apply_if(x, upper.tri(x), function(x) x + 5)
 apply_if <- function(mat, p, f) {
-  for(i in 1:length(mat[,1])) {
-    for(j in 1:length(mat[i,])) {
-      if(is.na(p[i,j]) || p[i,j])  {
-        mat[i,j] = f(mat[i,j])
-      }
-    }
-  }
+  # Fill NA with FALSE
+  p[is.na(p)] <- FALSE
+  mat[p] <- f(mat[p])
   mat
 }
 {% endhighlight %}
