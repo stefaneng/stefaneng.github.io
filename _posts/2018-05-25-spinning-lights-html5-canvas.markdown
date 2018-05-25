@@ -2,7 +2,8 @@
 layout: post
 title:  "Spinning lights with canvas and HTML5"
 date:   2018-05-25 10:00:00 -0800
-categories: HTML5 canvas
+categories: dev
+tags: [html5, canvas]
 ---
 
 ## Spinning lights. Full example [here](/examples/spinning_lights)

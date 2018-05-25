@@ -2,7 +2,8 @@
 layout: post
 title:  "Create an APA style correlation table with R"
 date:   2018-05-25 10:00:00 -0800
-categories: R rcorr knitr
+categories: dev
+tags: [R,rcorr,knitr]
 ---
 
 We will create the correlation matrix using `Hmisc::rcorr` to get the correlations along with the p-values and `knitr::kable` to print the table.

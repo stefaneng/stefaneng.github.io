@@ -2,7 +2,8 @@
 layout: post
 title:  "Add rank within group with dplyr"
 date:   2018-05-14 8:00:00 -0800
-categories: R dplyr regex
+categories: dev
+tags: [R,dplyr,regex]
 ---
 
 Add a new column `rank`, which is the rank according to `mpg` for each of the cars in each `cyl` group.

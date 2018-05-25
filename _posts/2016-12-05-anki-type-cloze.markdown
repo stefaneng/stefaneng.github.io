@@ -2,7 +2,8 @@
 layout: post
 title:  "Anki - Type Answer in Cloze Deletion"
 date:   2016-12-05 20:00:00 -0800
-categories: jekyll update
+categories: other
+tags: [anki, cloze]
 ---
 
 ![cloze-typing]({{ site.url }}/assets/cloze_card_typing.jpg)

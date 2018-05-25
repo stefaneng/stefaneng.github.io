@@ -2,7 +2,8 @@
 layout: post
 title:  "Rename column names with dplyr"
 date:   2018-05-14 8:00:00 -0800
-categories: R dplyr regex
+categories: dev
+tags: [R,dplyr,regex]
 ---
 
 Rename iris columns from `Sepal.Length` to `Length of Sepal` using the [setNames function](https://www.rdocumentation.org/packages/stats/versions/3.5.0/topics/setNames) and [gsub](https://www.rdocumentation.org/packages/base/versions/3.5.0/topics/grep).

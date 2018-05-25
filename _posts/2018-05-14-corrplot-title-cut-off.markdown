@@ -2,7 +2,8 @@
 layout: post
 title:  "corrplot fix title cut off type='upper'"
 date:   2018-05-14 10:00:00 -0800
-categories: R corrplot
+categories: dev
+tags:[R,corrplot]
 ---
 
 [corrplot](https://cran.r-project.org/web/packages/corrplot/index.html)

@@ -2,7 +2,8 @@
 layout: post
 title:  "Read a file with one valid JSON object per line with R and jsonlite"
 date:   2018-05-15 8:00:00 -0800
-categories: R jsonlite
+categories: dev
+tags: [R,jsonlite]
 ---
 
 We have a file with one valid JSON objects per line which we will load using [jsonlite](https://cran.r-project.org/web/packages/jsonlite/index.html)

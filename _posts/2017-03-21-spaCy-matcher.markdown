@@ -2,7 +2,8 @@
 layout: post
 title:  "Detecting Hyponyms with spaCy matchers"
 date:   2017-03-21 8:00:00 -0800
-categories: spaCy nlp python
+categories: dev
+tags: [spaCy,nlp,python]
 ---
 
 In this post we are going to explore spaCy's matchers.
@@ -24,7 +25,7 @@ This type of pattern can be generalized as:
 
 > NP\_0 such as \{NP\_1, NP\_2, ..., (and | or)\} NP\_n
 
-and this implies that 
+and this implies that
 
 > hyponym(NP\_i, NP\_0) for each i ∈ [1, n]
 
@@ -40,7 +41,7 @@ nlp = spacy.load('en')
 
 {% highlight python %}
 example1 = u'The bow lute, such as the Bambara ndang is plucked and has an individual curved neck for each string.'
-# Load the first example string 
+# Load the first example string
 doc = nlp(example1)
 {% endhighlight %}
 
@@ -50,7 +51,7 @@ spaCy splits each word or punctuation mark into an individual token.
 {% highlight python %}
 for t in doc:
     print(t, t.pos_)
-    
+
 {% endhighlight %}
 
     The DET
@@ -90,7 +91,7 @@ for noun_phrase in doc.noun_chunks:
     each string
 
 
-In the Hearst paper the patterns described all use the noun phrases rather than individual parts of speech. 
+In the Hearst paper the patterns described all use the noun phrases rather than individual parts of speech.
 We want to merge these noun phrases into a single token so we can match using Matchers
 
 
@@ -196,7 +197,7 @@ for ent_id, label, start, end in matches2:
     np_0 = span[0]
     # Last token is noun_phrase_1
     np_1 = span[-1]
-    
+
     # Extract the full list of hyponyms by search the noun phrase's subtree for more noun phrases
     np_list = [c for c in np_1.subtree if c.pos == NOUN]
 
@@ -215,11 +216,11 @@ Putting it all together we get the function
 {% highlight python %}
 def extract_hyponym(string):
     doc = nlp(string)
-    
+
     # Merge the tokens
     for np in doc.noun_chunks:
         np.merge()
-        
+
     OP = 'OP'
 
     # Load the matcher
@@ -241,10 +242,10 @@ def extract_hyponym(string):
                         {LOWER: "as"},
                         {POS: "NOUN"}
                     ])
-    
+
     # Match the document to the patterns
     matches = matcher(doc)
-    
+
     # Extract the matches
     for ent_id, label, start, end in matches:
         span = doc[start:end]
@@ -252,7 +253,7 @@ def extract_hyponym(string):
         np_0 = span[0]
         # Last token is noun_phrase_1
         np_1 = span[-1]
-    
+
         # Extract the full list of hyponyms by search the noun phrase's subtree for more noun phrases
         np_list = [c for c in np_1.subtree if c.pos == NOUN]
 
