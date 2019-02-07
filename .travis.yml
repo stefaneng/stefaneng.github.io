@@ -1,6 +1,0 @@
-language: ruby
-rvm:
-  - 2.0.0
-
-install: bundle install
-script: bundle exec jekyll build

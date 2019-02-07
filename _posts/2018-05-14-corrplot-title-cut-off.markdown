@@ -29,7 +29,7 @@ corrplot(irisCor, method="color",
 
 {% endhighlight %}
 
-![corrplot upper no margin]({{ "/assets/corrplot_title_cut_off/title_cut_off.png" }})
+![corrplot upper no margin]({{ "/images/corrplot_title_cut_off/title_cut_off.png" }})
 
 {% highlight R %}
 corrplot(irisCor, method="color",
@@ -41,4 +41,4 @@ corrplot(irisCor, method="color",
          diag=FALSE)
 {% endhighlight %}
 
-![corrplot with margin for title]({{ "/assets/corrplot_title_cut_off/title_margin.png" }})
+![corrplot with margin for title]({{ "/images/corrplot_title_cut_off/title_margin.png" }})

@@ -6,8 +6,8 @@ categories: other
 tags: [anki, cloze]
 ---
 
-![cloze-typing]({{ site.url }}/assets/cloze_card_typing.jpg)
-![cloze-typing-answer]({{ site.url }}/assets/cloze_card_typing2.jpg)
+![cloze-typing]({{ site.url }}/images/cloze_card_typing.jpg)
+![cloze-typing-answer]({{ site.url }}/images/cloze_card_typing2.jpg)
 
 To enable typing on a cloze card in anki add
 
@@ -20,6 +20,6 @@ To enable typing on a cloze card in anki add
 
 To the front and back of the card, like this
 
-![cloze-card-creation]({{ site.url }}/assets/cloze_card_creation.jpg)
+![cloze-card-creation]({{ site.url }}/images/cloze_card_creation.jpg)
 
 For more information see the [Anki Documentation](http://ankisrs.net/docs/manual.html#typinganswers)
