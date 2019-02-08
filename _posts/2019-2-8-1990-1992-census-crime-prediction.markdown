@@ -252,7 +252,7 @@ seems to be a slightly smaller slope in the West panel, but overall it
 is not clear that the interactions are needed.
 
 ![Conditional Plot of crime rate, for log(popul) given
-region](images/census_crime/unnamed-chunk-7-1.png)
+region](images/unnamed-chunk-7-1.png)
 <span id="fig:coplot" label="fig:coplot">\[fig:coplot\]</span>
 
 Our original cross validation was performed on data that was not
@@ -405,8 +405,8 @@ percentage changing than just the estimated coefficients. This can be
 seen in Figure \[fig:vary\_poo\](#fig:vary_poor)
 
 ![Varying the poor percentage while keeping all other variables at the
-mean values](images/census_crime/unnamed-chunk-12-1.png)
-<span id="fig:vary_poor" label="fig:vary_poor"\[fig:vary\_poo\]</span>
+mean values](images/unnamed-chunk-12-1.png)
+<span id="fig:vary_poor" label="fig:vary_poor">\[fig:vary\_poo\]</span>
 
 ## Cross Validation
 
@@ -446,7 +446,7 @@ county.
 | -----------------------------------------------------------------------: | -----: | ----------: | -------: | -----: | -----: |
 |                                                                 Additive |     NB | RegionInter | AllInter |   Full | Simple |
 |                                                                   235.61 | 236.57 |      248.13 |    269.4 | 309.62 | 471.37 |
-| <span id="table:mse_all" label="table:mse_all"\[table:mse\_al\]</span> |        |             |          |        |        |
+| <span id="table:mse_all" label="table:mse_all">\[table:mse\_al\]</span> |        |             |          |        |        |
 
 Test MSE will all data from test
 included
@@ -455,7 +455,7 @@ included
 | -----------------------------------------------------------------------------------: | -------: | -------: | ----------: | -----: | -----: |
 |                                                                                   NB | Additive | AllInter | RegionInter |   Full | Simple |
 |                                                                               248.82 |   252.86 |   256.69 |      256.73 | 310.86 | 469.59 |
-| <span id="table:mse_nokings" label="table:mse_nokings"\[table:mse\_noking\]</span> |          |          |             |        |        |
+| <span id="table:mse_nokings" label="table:mse_nokings">\[table:mse\_noking\]</span> |          |          |             |        |        |
 
 Test MSE with Kings County excluded
 
@@ -484,7 +484,7 @@ training.
 | regionnortheast                                                                |  \-20.565 |      7.189 |   0.005 |
 | regionmidwest                                                                  |   \-6.943 |      7.233 |   0.340 |
 | regionsouth                                                                    |     3.083 |      6.712 |   0.647 |
-| <span id="table:summ_test" label="table:summ_test"\[table:summ\_tes\]</span> |           |            |         |
+| <span id="table:summ_test" label="table:summ_test">\[table:summ\_tes\]</span> |           |            |         |
 
 Test set coefficients and p-values
 
@@ -530,8 +530,8 @@ other variables at the mean) while varying only the population. We range
 the population from the minimum 100,043 to the maximum 8,863,164.
 
 ![Varying the population while keeping all other variables at the mean
-values](images/census_crime/unnamed-chunk-18-1.png)
-<span id="fig:vary_popul" label="fig:vary_popul"\[fig:vary\_popu\]</span>
+values](images/unnamed-chunk-18-1.png)
+<span id="fig:vary_popul" label="fig:vary_popul">\[fig:vary\_popu\]</span>
 
 ## Conclusion
 
@@ -580,9 +580,9 @@ Midwest.
 
 #### Studentized Residuals
 
-<span id="studentized-residuals" label="studentized-residuals"\[studentized-residual\]</span>
+<span id="studentized-residuals" label="studentized-residuals">\[studentized-residual\]</span>
 
-![image](images/census_crime/unnamed-chunk-20-1.png)
+![image](images/unnamed-chunk-20-1.png)
 
 | county     | state | Student Residuals |
 | :--------- | :---- | ----------------: |
@@ -610,7 +610,7 @@ error.
 
 ## DFBETA on continuous coefficients
 
-![image](images/census_crime/unnamed-chunk-21-1.png)
+![image](images/unnamed-chunk-21-1.png)
 
 | county                                                               | coefficient          |  DFBETA |
 | :------------------------------------------------------------------- | :------------------- | ------: |
@@ -639,7 +639,7 @@ error.
 | Shawnee (KS)                                                         | log(percapitaincome) |   1.098 |
 | Philadelphia (PA)                                                    | log(percapitaincome) |   1.089 |
 | San\_Mateo (CA)                                                      | log(percapitaincome) | \-1.087 |
-| <span id="table:dfbeta" label="table:dfbeta"\[table:dfbet\]</span> |                      |         |
+| <span id="table:dfbeta" label="table:dfbeta">\[table:dfbet\]</span> |                      |         |
 
 High \> 2/sqrt(n) DFBETA values
 
@@ -650,7 +650,7 @@ look at the data, we see that Monroe has 45.8% of its population between
 and has some of the most extreme values. It is by far the most
 influential and extreme point in the data.
 
-![image](images/census_crime/unnamed-chunk-23-1.png)
+![image](images/unnamed-chunk-23-1.png)
 
 We can see from the diagnostic plots that the residuals and fitted
 values are approximately symmetric and the residuals don’t appear to be
@@ -667,14 +667,14 @@ as an issue as its residual is so high.
 
 ## Correlations
 
-![image](images/census_crime/unnamed-chunk-25-1.png) This
+![image](images/unnamed-chunk-25-1.png) This
 clustered distance matrix was how we selected which variables to remove
 from the model. The blue variables are negatively correlated with each
 other and the red variables are positively correlated.
 
 ## Outliers
 
-![image](images/census_crime/unnamed-chunk-26-1.png) We can see
+![image](images/unnamed-chunk-26-1.png) We can see
 that Kings county is high for its region and overall.
 
 
