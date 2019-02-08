@@ -244,7 +244,7 @@ model
 
 Partial F-test for full interactions model
 
-In the conditional plot, in Figure [\[fig:coplot\](#fig:coplot) we can
+In the conditional plot, in Figure [\[fig:coplot\]](#fig:coplot) we can
 see the values of the log of population vs the crime rate for each of
 the regions. The bottom left panel is the West, bottom right is the
 northeast, top left is the midwest and top right is the south. There
@@ -402,7 +402,7 @@ to the means and then only varied the percentage of poor from 1 to 37,
 which is approximately the range found in the training set. It is easier
 to see how the crime rate changes from this graph due to the poor
 percentage changing than just the estimated coefficients. This can be
-seen in Figure \[fig:vary\_poo\](#fig:vary_poor)
+seen in Figure [\[fig:vary\_poo\]](#fig:vary_poor)
 
 ![Varying the poor percentage while keeping all other variables at the
 mean values](/images/unnamed-chunk-12-1.png)
@@ -524,7 +524,7 @@ the hypothesis.
 Final coefficients and p-values
 
 We find it easier to understand some of these estimates with plots. In
-Figure \[fig:vary\_popu\](#fig:vary_popul) we show how the predicted
+Figure [\[fig:vary\_popu\]](#fig:vary_popul) we show how the predicted
 crime rates change when holding all variables constant (keeping the
 other variables at the mean) while varying only the population. We range
 the population from the minimum 100,043 to the maximum 8,863,164.
