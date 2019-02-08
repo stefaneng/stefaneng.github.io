@@ -1,11 +1,11 @@
-----
+---
 layout: post
 title:  "1990-1992 Census Crime Rate Prediction"
 date:   2018-05-25 10:00:00 -0800
 categories: dev
 tags: [linear-regression, statistics, project, R]
 comments: true
-----
+---
 
 In this project I look at a dataset that provides some demographic information for 440 of the most populous counties in the United States in years 1990-92. The crime rate for each of the countries is predicted using linear regression and then using negative binomial regression and the results are compared.
 
