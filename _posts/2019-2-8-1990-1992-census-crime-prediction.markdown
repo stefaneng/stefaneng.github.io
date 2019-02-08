@@ -79,7 +79,7 @@ cluster that seemed to make the most intuitive sense to keep. We
 confirmed that this was a good model by starting with all of the
 variables and using backward selection to arrive at the identicial model
 that we had selected by hand. Then a partial F-test was performed, see
-Table [\[table:ftest\_final\](#table:ftest_final). The F statistic was
+Table [\[table:ftest\_final\]](#table:ftest_final). The F statistic was
 extremely small, which means that the residual sum of squares was almost
 the same after dropping the variables `pop65plus`, `percapitaphys`,
 `higrads`, `bachelors`, and `unemployed`. From this reduced model, we
@@ -171,7 +171,7 @@ Then the VIF factor is equal to \\[VIF_i = \frac{1}{1 - R_i^2}\\] Where
 on variable \\(i\\) . We removed the variables for per capita income, the
 number of high school graduates, and the number of bachelor degree
 graduates based on the VIF results. The last column in Table
-[\[table:vif\](#table:vif) shows how much the standard error of the
+[\[table:vif\]](#table:vif) shows how much the standard error of the
 variable is increased due to the collinearity. For example, for the
 bachelors variable the value of 2.834 means that the standard error for
 \\(\beta_{bachelors}\\) is 2.834 larger than if the variables were not
@@ -219,11 +219,11 @@ model with only region, we did not reject the null hypothesis at the
 \\(\alpha = 0.05\\) level, as the p-value was 0.06. The value was close
 enough that we decided to continue to compare with this model as well.
 The results can be see in Table
-[\[table:ftest\_region\_inter\](#table:ftest_region_inter). When we run
+[\[table:ftest\_region\_inter\]](#table:ftest_region_inter). When we run
 a partial F-test on the interaction models with more interactions, we
 get a larger test statistic that allows us to reject the null hypothesis
 at the \\(\alpha = 0.05\\) level. This can be seen in Table
-[\[table:ftest\_full\_inter\](#table:ftest_full_inter).
+[\[table:ftest\_full\_inter\]](#table:ftest_full_inter).
 
 |                                                                                                     Res.Df |      RSS | Df | Sum of Sq |     F | Pr(\>F) |
 | ---------------------------------------------------------------------------------------------------------: | -------: | -: | --------: | ----: | ------: |
@@ -304,7 +304,7 @@ increase instead of multiplying by \\(e\\). If the per captia area
 increases by 10%, then the crime rate per 1000 people will *decrease* by
 0.49. \\(\beta_{area} \cdot ln(1.10) = -5.127 \cdot ln(1.10) = -0.49\\).
 This is summarized in Table
-[\[table:crm\_per\_change\](#table:crm_per_change).
+[\[table:crm\_per\_change\]](#table:crm_per_change).
 
 |                                                                                                |      5% |     10% |     20% |     30% |
 | :--------------------------------------------------------------------------------------------- | ------: | ------: | ------: | ------: |
