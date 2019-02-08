@@ -79,7 +79,7 @@ cluster that seemed to make the most intuitive sense to keep. We
 confirmed that this was a good model by starting with all of the
 variables and using backward selection to arrive at the identicial model
 that we had selected by hand. Then a partial F-test was performed, see
-Table [\[table:ftest\_final\]](#table:ftest_final). The F statistic was
+Table [\[table:ftest\_final\](#table:ftest_final). The F statistic was
 extremely small, which means that the residual sum of squares was almost
 the same after dropping the variables `pop65plus`, `percapitaphys`,
 `higrads`, `bachelors`, and `unemployed`. From this reduced model, we
@@ -171,7 +171,7 @@ Then the VIF factor is equal to \\[VIF_i = \frac{1}{1 - R_i^2}\\] Where
 on variable \\(i\\) . We removed the variables for per capita income, the
 number of high school graduates, and the number of bachelor degree
 graduates based on the VIF results. The last column in Table
-[\\[table:vif\\]](#table:vif) shows how much the standard error of the
+[\[table:vif\](#table:vif) shows how much the standard error of the
 variable is increased due to the collinearity. For example, for the
 bachelors variable the value of 2.834 means that the standard error for
 \\(\beta_{bachelors}\\) is 2.834 larger than if the variables were not
@@ -219,11 +219,11 @@ model with only region, we did not reject the null hypothesis at the
 \\(\alpha = 0.05\\) level, as the p-value was 0.06. The value was close
 enough that we decided to continue to compare with this model as well.
 The results can be see in Table
-[\[table:ftest\_region\_inter\]](#table:ftest_region_inter). When we run
+[\[table:ftest\_region\_inter\](#table:ftest_region_inter). When we run
 a partial F-test on the interaction models with more interactions, we
 get a larger test statistic that allows us to reject the null hypothesis
 at the \\(\alpha = 0.05\\) level. This can be seen in Table
-[\[table:ftest\_full\_inter\]](#table:ftest_full_inter).
+[\[table:ftest\_full\_inter\](#table:ftest_full_inter).
 
 |                                                                                                     Res.Df |      RSS | Df | Sum of Sq |     F | Pr(\>F) |
 | ---------------------------------------------------------------------------------------------------------: | -------: | -: | --------: | ----: | ------: |
@@ -244,7 +244,7 @@ model
 
 Partial F-test for full interactions model
 
-In the conditional plot, in Figure [\[fig:coplot\]](#fig:coplot) we can
+In the conditional plot, in Figure [\[fig:coplot\](#fig:coplot) we can
 see the values of the log of population vs the crime rate for each of
 the regions. The bottom left panel is the West, bottom right is the
 northeast, top left is the midwest and top right is the south. There
@@ -304,7 +304,7 @@ increase instead of multiplying by \\(e\\). If the per captia area
 increases by 10%, then the crime rate per 1000 people will *decrease* by
 0.49. \\(\beta_{area} \cdot ln(1.10) = -5.127 \cdot ln(1.10) = -0.49\\).
 This is summarized in Table
-[\[table:crm\_per\_change\]](#table:crm_per_change).
+[\[table:crm\_per\_change\](#table:crm_per_change).
 
 |                                                                                                |      5% |     10% |     20% |     30% |
 | :--------------------------------------------------------------------------------------------- | ------: | ------: | ------: | ------: |
@@ -402,7 +402,7 @@ to the means and then only varied the percentage of poor from 1 to 37,
 which is approximately the range found in the training set. It is easier
 to see how the crime rate changes from this graph due to the poor
 percentage changing than just the estimated coefficients. This can be
-seen in Figure \[fig:vary\_poo\]](#fig:vary_poor)
+seen in Figure \[fig:vary\_poo\](#fig:vary_poor)
 
 ![Varying the poor percentage while keeping all other variables at the
 mean values](images/census_crime/unnamed-chunk-12-1.png)
@@ -414,7 +414,7 @@ Once we had built our models we used 10-fold cross validation to compare
 them against each other. We also used LOOCV which resulted in very
 similar results to the 10-fold cross validation. Once we had included
 the negative binomial model we switched to only using the 10-fold cross
-validation. The interactions models had a better adjusted\\(R^\\) value
+validation. The interactions models had a better adjusted\\(R^2\\) value
 and were found with the partial F-test to have at least one parameters
 that should not be set to 0 (at alpha = 0.05 significance level). We
 included a model called “Full”, which had all of the dependent variables
@@ -436,8 +436,8 @@ model building process which means that the results will be biased. We
 kept the test set held out until the end when all models were finalized
 so that the estimated mean squared error is a better indication of the
 true mean squared error. The results on the test sets are shown in Table
-\[table:mse\_al\]](#table:mse_all) for all of the data, and Table
-\[table:mse\_noking\]](#table:mse_nokings) for prediction not trained
+\[table:mse\_al\](#table:mse_all) for all of the data, and Table
+\[table:mse\_noking\](#table:mse_nokings) for prediction not trained
 including Kings county data. See the appendix for reasoning behind
 dropping Kings
 county.
@@ -490,7 +490,7 @@ Test set coefficients and p-values
 
 We have\\(R^2_{adj} \\) 0.614 and\\(R^2 \\) 0.654. Which means that
 65.42 percent of the error is explained by our model. The p-values in
-Table \[table:summ\_tes\]](#table:summ_test)are the most conservative,
+Table \[table:summ\_tes\](#table:summ_test)are the most conservative,
 since we have not seen any of the data when testing this hypothesis. In
 this way, it is like a properly run experiment. We do not want to fish
 for statistically significance by creating hypotheses based on our data
@@ -524,7 +524,7 @@ the hypothesis.
 Final coefficients and p-values
 
 We find it easier to understand some of these estimates with plots. In
-Figure \[fig:vary\_popu\]](#fig:vary_popul) we show how the predicted
+Figure \[fig:vary\_popu\](#fig:vary_popul) we show how the predicted
 crime rates change when holding all variables constant (keeping the
 other variables at the mean) while varying only the population. We range
 the population from the minimum 100,043 to the maximum 8,863,164.
@@ -643,7 +643,7 @@ error.
 
 High \> 2/sqrt(n) DFBETA values
 
-Table \[table:dfbet\]](#table:dfbeta) shows the sorted extreme\\(DFBET\\) values for each of the coefficients. Take for example Monroe
+Table \[table:dfbet\](#table:dfbeta) shows the sorted extreme\\(DFBET\\) values for each of the coefficients. Take for example Monroe
 (IN), which has a huge influence on the\\(pop183\\) parameter. If we
 look at the data, we see that Monroe has 45.8% of its population between
 18 and 34. We see that Kings (NY), influences many of the coefficients
