@@ -88,7 +88,6 @@ interactions.
 
 |                                                                               Res.Df |      RSS | Df | Sum of Sq |     F | Pr(\>F) |
 | -----------------------------------------------------------------------------------: | -------: | -: | --------: | ----: | ------: |
-|                                                                               Res.Df |      RSS | Df | Sum of Sq |     F | Pr(\>F) |
 |                                                                                  342 | 144262.2 |    |           |       |         |
 |                                                                                  337 | 143366.5 |  5 |    895.74 | 0.421 |   0.834 |
 | <span id="table:ftest_final" label="table:ftest_final">\[table:ftest\_final\]</span> |          |    |           |       |         |
@@ -227,7 +226,6 @@ at the \\(\alpha = 0.05\\) level. This can be seen in Table
 
 |                                                                                                     Res.Df |      RSS | Df | Sum of Sq |     F | Pr(\>F) |
 | ---------------------------------------------------------------------------------------------------------: | -------: | -: | --------: | ----: | ------: |
-|                                                                                                     Res.Df |      RSS | Df | Sum of Sq |     F | Pr(\>F) |
 |                                                                                                        342 | 124062.3 |    |           |       |         |
 |                                                                                                        336 | 119758.2 |  6 |  4304.037 | 2.013 |   0.063 |
 | <span id="table:ftest_region_inter" label="table:ftest_region_inter">\[table:ftest\_region\_inter\]</span> |          |    |           |       |         |
@@ -237,7 +235,6 @@ model
 
 |                                                                                               Res.Df |      RSS | Df | Sum of Sq |        F | Pr(\>F) |
 | ---------------------------------------------------------------------------------------------------: | -------: | -: | --------: | -------: | ------: |
-|                                                                                               Res.Df |      RSS | Df | Sum of Sq |        F | Pr(\>F) |
 |                                                                                                  342 | 124062.3 |    |           |          |         |
 |                                                                                                  326 | 105258.6 | 16 |  18803.67 | 3.639842 |   4e-06 |
 | <span id="table:ftest_full_inter" label="table:ftest_full_inter">\[table:ftest\_full\_inter\]</span> |          |    |           |          |         |
