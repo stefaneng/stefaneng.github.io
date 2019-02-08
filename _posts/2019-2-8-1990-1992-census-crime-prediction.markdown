@@ -68,7 +68,7 @@ reduced from this model.
 
 #### Base Model
 
-<span id="base-model" label="base-model">\\[base-model\\]</span>
+<span id="base-model" label="base-model">\[base-model\]</span>
 
     crm1000 ~ percapitaarea + popul + pop1834 +
               percapitabeds + poors + percapitaincome + region
@@ -79,7 +79,7 @@ cluster that seemed to make the most intuitive sense to keep. We
 confirmed that this was a good model by starting with all of the
 variables and using backward selection to arrive at the identicial model
 that we had selected by hand. Then a partial F-test was performed, see
-Table [\\[table:ftest\_final\\]](#table:ftest_final). The F statistic was
+Table [\[table:ftest\_final\]](#table:ftest_final). The F statistic was
 extremely small, which means that the residual sum of squares was almost
 the same after dropping the variables `pop65plus`, `percapitaphys`,
 `higrads`, `bachelors`, and `unemployed`. From this reduced model, we
@@ -91,7 +91,7 @@ interactions.
 |                                                                               Res.Df |      RSS | Df | Sum of Sq |     F | Pr(\>F) |
 |                                                                                  342 | 144262.2 |    |           |       |         |
 |                                                                                  337 | 143366.5 |  5 |    895.74 | 0.421 |   0.834 |
-| <span id="table:ftest_final" label="table:ftest_final">\\[table:ftest\_final\\]</span> |          |    |           |       |         |
+| <span id="table:ftest_final" label="table:ftest_final">\[table:ftest\_final\]</span> |          |    |           |       |         |
 
 Partial F-Test for Full model vs final model (without transformations)
 
@@ -192,7 +192,7 @@ other.
 | pop65plus                                                   | 2.123 |  1 |           1.457 |
 | percapitaarea                                               | 1.553 |  1 |           1.246 |
 | popul                                                       | 1.290 |  1 |           1.136 |
-| <span id="table:vif" label="table:vif">\\[table:vif\\]</span> |       |    |                 |
+| <span id="table:vif" label="table:vif">\[table:vif\]</span> |       |    |                 |
 
 Variance inflation factor for each variable
 
@@ -219,18 +219,18 @@ model with only region, we did not reject the null hypothesis at the
 \\(\alpha = 0.05\\) level, as the p-value was 0.06. The value was close
 enough that we decided to continue to compare with this model as well.
 The results can be see in Table
-[\\[table:ftest\_region\_inter\\]](#table:ftest_region_inter). When we run
+[\[table:ftest\_region\_inter\]](#table:ftest_region_inter). When we run
 a partial F-test on the interaction models with more interactions, we
 get a larger test statistic that allows us to reject the null hypothesis
 at the \\(\alpha = 0.05\\) level. This can be seen in Table
-[\\[table:ftest\_full\_inter\\]](#table:ftest_full_inter).
+[\[table:ftest\_full\_inter\]](#table:ftest_full_inter).
 
 |                                                                                                     Res.Df |      RSS | Df | Sum of Sq |     F | Pr(\>F) |
 | ---------------------------------------------------------------------------------------------------------: | -------: | -: | --------: | ----: | ------: |
 |                                                                                                     Res.Df |      RSS | Df | Sum of Sq |     F | Pr(\>F) |
 |                                                                                                        342 | 124062.3 |    |           |       |         |
 |                                                                                                        336 | 119758.2 |  6 |  4304.037 | 2.013 |   0.063 |
-| <span id="table:ftest_region_inter" label="table:ftest_region_inter">\\[table:ftest\_region\_inter\\]</span> |          |    |           |       |         |
+| <span id="table:ftest_region_inter" label="table:ftest_region_inter">\[table:ftest\_region\_inter\]</span> |          |    |           |       |         |
 
 Partial F-test for region interactions
 model
@@ -240,11 +240,11 @@ model
 |                                                                                               Res.Df |      RSS | Df | Sum of Sq |        F | Pr(\>F) |
 |                                                                                                  342 | 124062.3 |    |           |          |         |
 |                                                                                                  326 | 105258.6 | 16 |  18803.67 | 3.639842 |   4e-06 |
-| <span id="table:ftest_full_inter" label="table:ftest_full_inter">\\[table:ftest\_full\_inter\\]</span> |          |    |           |          |         |
+| <span id="table:ftest_full_inter" label="table:ftest_full_inter">\[table:ftest\_full\_inter\]</span> |          |    |           |          |         |
 
 Partial F-test for full interactions model
 
-In the conditional plot, in Figure [\\[fig:coplot\\]](#fig:coplot) we can
+In the conditional plot, in Figure [\[fig:coplot\]](#fig:coplot) we can
 see the values of the log of population vs the crime rate for each of
 the regions. The bottom left panel is the West, bottom right is the
 northeast, top left is the midwest and top right is the south. There
@@ -253,7 +253,7 @@ is not clear that the interactions are needed.
 
 ![Conditional Plot of crime rate, for log(popul) given
 region](images/census_crime/unnamed-chunk-7-1.png)
-<span id="fig:coplot" label="fig:coplot">\\[fig:coplot\\]</span>
+<span id="fig:coplot" label="fig:coplot">\[fig:coplot\]</span>
 
 Our original cross validation was performed on data that was not
 centered (mean subtracted off). Centering can improve the standard
@@ -304,7 +304,7 @@ increase instead of multiplying by \\(e\\). If the per captia area
 increases by 10%, then the crime rate per 1000 people will *decrease* by
 0.49. \\(\beta_{area} \cdot ln(1.10) = -5.127 \cdot ln(1.10) = -0.49\\).
 This is summarized in Table
-[\\[table:crm\_per\_change\\]](#table:crm_per_change).
+[\[table:crm\_per\_change\]](#table:crm_per_change).
 
 |                                                                                                |      5% |     10% |     20% |     30% |
 | :--------------------------------------------------------------------------------------------- | ------: | ------: | ------: | ------: |
@@ -315,7 +315,7 @@ This is summarized in Table
 | percapitabeds                                                                                  |   0.177 |   0.346 |   0.661 |   0.951 |
 | poors                                                                                          |   1.243 |   2.428 |   4.645 |   6.684 |
 | percapitaincome                                                                                |   1.215 |   2.373 |   4.538 |   6.531 |
-| <span id="table:crm_per_change" label="table:crm_per_change">\\[table:crm\_per\_change\\]</span> |         |         |         |         |
+| <span id="table:crm_per_change" label="table:crm_per_change">\[table:crm\_per\_change\]</span> |         |         |         |         |
 
 Change in crime rate by percentage increase
 
@@ -402,11 +402,11 @@ to the means and then only varied the percentage of poor from 1 to 37,
 which is approximately the range found in the training set. It is easier
 to see how the crime rate changes from this graph due to the poor
 percentage changing than just the estimated coefficients. This can be
-seen in Figure \\[fig:vary\_poo\\]](#fig:vary_poor)
+seen in Figure \[fig:vary\_poo\]](#fig:vary_poor)
 
 ![Varying the poor percentage while keeping all other variables at the
 mean values](images/census_crime/unnamed-chunk-12-1.png)
-<span id="fig:vary_poor" label="fig:vary_poor"\\[fig:vary\_poo\\]</span>
+<span id="fig:vary_poor" label="fig:vary_poor"\[fig:vary\_poo\]</span>
 
 ## Cross Validation
 
@@ -436,8 +436,8 @@ model building process which means that the results will be biased. We
 kept the test set held out until the end when all models were finalized
 so that the estimated mean squared error is a better indication of the
 true mean squared error. The results on the test sets are shown in Table
-\\[table:mse\_al\\]](#table:mse_all) for all of the data, and Table
-\\[table:mse\_noking\\]](#table:mse_nokings) for prediction not trained
+\[table:mse\_al\]](#table:mse_all) for all of the data, and Table
+\[table:mse\_noking\]](#table:mse_nokings) for prediction not trained
 including Kings county data. See the appendix for reasoning behind
 dropping Kings
 county.
@@ -446,7 +446,7 @@ county.
 | -----------------------------------------------------------------------: | -----: | ----------: | -------: | -----: | -----: |
 |                                                                 Additive |     NB | RegionInter | AllInter |   Full | Simple |
 |                                                                   235.61 | 236.57 |      248.13 |    269.4 | 309.62 | 471.37 |
-| <span id="table:mse_all" label="table:mse_all"\\[table:mse\_al\\]</span> |        |             |          |        |        |
+| <span id="table:mse_all" label="table:mse_all"\[table:mse\_al\]</span> |        |             |          |        |        |
 
 Test MSE will all data from test
 included
@@ -455,7 +455,7 @@ included
 | -----------------------------------------------------------------------------------: | -------: | -------: | ----------: | -----: | -----: |
 |                                                                                   NB | Additive | AllInter | RegionInter |   Full | Simple |
 |                                                                               248.82 |   252.86 |   256.69 |      256.73 | 310.86 | 469.59 |
-| <span id="table:mse_nokings" label="table:mse_nokings"\\[table:mse\_noking\\]</span> |          |          |             |        |        |
+| <span id="table:mse_nokings" label="table:mse_nokings"\[table:mse\_noking\]</span> |          |          |             |        |        |
 
 Test MSE with Kings County excluded
 
@@ -484,13 +484,13 @@ training.
 | regionnortheast                                                                |  \-20.565 |      7.189 |   0.005 |
 | regionmidwest                                                                  |   \-6.943 |      7.233 |   0.340 |
 | regionsouth                                                                    |     3.083 |      6.712 |   0.647 |
-| <span id="table:summ_test" label="table:summ_test"\\[table:summ\_tes\\]</span> |           |            |         |
+| <span id="table:summ_test" label="table:summ_test"\[table:summ\_tes\]</span> |           |            |         |
 
 Test set coefficients and p-values
 
 We have\\(R^2_{adj} \\) 0.614 and\\(R^2 \\) 0.654. Which means that
 65.42 percent of the error is explained by our model. The p-values in
-Table \\[table:summ\_tes\\]](#table:summ_test)are the most conservative,
+Table \[table:summ\_tes\]](#table:summ_test)are the most conservative,
 since we have not seen any of the data when testing this hypothesis. In
 this way, it is like a properly run experiment. We do not want to fish
 for statistically significance by creating hypotheses based on our data
@@ -524,14 +524,14 @@ the hypothesis.
 Final coefficients and p-values
 
 We find it easier to understand some of these estimates with plots. In
-Figure \\[fig:vary\_popu\\]](#fig:vary_popul) we show how the predicted
+Figure \[fig:vary\_popu\]](#fig:vary_popul) we show how the predicted
 crime rates change when holding all variables constant (keeping the
 other variables at the mean) while varying only the population. We range
 the population from the minimum 100,043 to the maximum 8,863,164.
 
 ![Varying the population while keeping all other variables at the mean
 values](images/census_crime/unnamed-chunk-18-1.png)
-<span id="fig:vary_popul" label="fig:vary_popul"\\[fig:vary\_popu\\]</span>
+<span id="fig:vary_popul" label="fig:vary_popul"\[fig:vary\_popu\]</span>
 
 ## Conclusion
 
@@ -580,7 +580,7 @@ Midwest.
 
 #### Studentized Residuals
 
-<span id="studentized-residuals" label="studentized-residuals"\\[studentized-residual\\]</span>
+<span id="studentized-residuals" label="studentized-residuals"\[studentized-residual\]</span>
 
 ![image](images/census_crime/unnamed-chunk-20-1.png)
 
@@ -639,11 +639,11 @@ error.
 | Shawnee (KS)                                                         | log(percapitaincome) |   1.098 |
 | Philadelphia (PA)                                                    | log(percapitaincome) |   1.089 |
 | San\_Mateo (CA)                                                      | log(percapitaincome) | \-1.087 |
-| <span id="table:dfbeta" label="table:dfbeta"\\[table:dfbet\\]</span> |                      |         |
+| <span id="table:dfbeta" label="table:dfbeta"\[table:dfbet\]</span> |                      |         |
 
 High \> 2/sqrt(n) DFBETA values
 
-Table \\[table:dfbet\\]](#table:dfbeta) shows the sorted extreme\\(DFBET\\) values for each of the coefficients. Take for example Monroe
+Table \[table:dfbet\]](#table:dfbeta) shows the sorted extreme\\(DFBET\\) values for each of the coefficients. Take for example Monroe
 (IN), which has a huge influence on the\\(pop183\\) parameter. If we
 look at the data, we see that Monroe has 45.8% of its population between
 18 and 34. We see that Kings (NY), influences many of the coefficients
