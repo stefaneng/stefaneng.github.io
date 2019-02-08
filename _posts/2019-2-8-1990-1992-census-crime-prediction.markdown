@@ -637,7 +637,7 @@ error.
 
 High \> 2/sqrt(n) DFBETA values
 
-Table \[table:dfbet\](#table:dfbeta) shows the sorted extreme\\(DFBET\\) values for each of the coefficients. Take for example Monroe
+Table [\[table:dfbet\]](#table:dfbeta) shows the sorted extreme \\(DFBETA\\) values for each of the coefficients. Take for example Monroe
 (IN), which has a huge influence on the\\(pop183\\) parameter. If we
 look at the data, we see that Monroe has 45.8% of its population between
 18 and 34. We see that Kings (NY), influences many of the coefficients
