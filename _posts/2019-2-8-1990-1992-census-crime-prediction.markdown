@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "1990-1992 Census Crime Rate Prediction"
-date:   2018-05-25 10:00:00 -0800
+date:   2019-2-8 10:00:00 -0800
 categories: dev
 tags: [linear-regression, statistics, project, R]
 comments: true
