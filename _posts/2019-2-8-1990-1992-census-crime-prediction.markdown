@@ -419,7 +419,6 @@ using the natural log of the percentage of poor people for each county.
 
 | Additive |     NB | RegionInter | AllInter |   Full | Simple |
 | -------: | -----: | ----------: | -------: | -----: | -----: |
-| Additive |     NB | RegionInter | AllInter |   Full | Simple |
 |   395.69 | 415.05 |      430.86 |   439.82 | 500.43 | 605.53 |
 
 Average MSE across 10-folds
@@ -440,7 +439,6 @@ county.
 
 |                                                                 Additive |     NB | RegionInter | AllInter |   Full | Simple |
 | -----------------------------------------------------------------------: | -----: | ----------: | -------: | -----: | -----: |
-|                                                                 Additive |     NB | RegionInter | AllInter |   Full | Simple |
 |                                                                   235.61 | 236.57 |      248.13 |    269.4 | 309.62 | 471.37 |
 | <span id="table:mse_all" label="table:mse_all">\[table:mse\_al\]</span> |        |             |          |        |        |
 
@@ -449,7 +447,6 @@ included
 
 |                                                                                   NB | Additive | AllInter | RegionInter |   Full | Simple |
 | -----------------------------------------------------------------------------------: | -------: | -------: | ----------: | -----: | -----: |
-|                                                                                   NB | Additive | AllInter | RegionInter |   Full | Simple |
 |                                                                               248.82 |   252.86 |   256.69 |      256.73 | 310.86 | 469.59 |
 | <span id="table:mse_nokings" label="table:mse_nokings">\[table:mse\_noking\]</span> |          |          |             |        |        |
 
