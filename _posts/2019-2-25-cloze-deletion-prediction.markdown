@@ -15,3 +15,5 @@ which data set is easier to predict. Then I explore tuning the dropout parameter
 can be improved. Finally the predictions are analyzed to see which sentences are easy to predict.
 
 [Full project available here (PDF)](/resources/cloze_deletion_eng.pdf)
+
+[Github page for the project](https://github.com/stefaneng/Cloze-Deletion-Prediction)
